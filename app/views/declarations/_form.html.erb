@@ -1,0 +1,27 @@
+<%= form_with(model: declaration, local: true) do |form| %>
+  <% if declaration.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(declaration.errors.count, "error") %> prohibited this declaration from being saved:</h2>
+
+      <ul>
+      <% declaration.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :declaration_name %>
+    <%= form.text_field :declaration_name, id: :declaration_declaration_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :declaration_description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
