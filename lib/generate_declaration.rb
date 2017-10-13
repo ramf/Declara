@@ -11,8 +11,8 @@ module GeneratePdf
 
     #:background  => "lib/imagens/d1.png"
     :background => "#{Rails.root}/lib/imagens/midle.png"
-      
-    } 
+
+    }
 
 
 def self.declaration declaration_name, details
@@ -21,7 +21,7 @@ def self.declaration declaration_name, details
 
 
     Prawn::Document.new(PDF_OPTIONS) do |pdf|
-
+      #Ciente
       # Define a cor do traçado
       pdf.fill_color "000000"
 
