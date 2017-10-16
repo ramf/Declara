@@ -17,10 +17,10 @@
         <td><%= declaration.declaration_name %></td>
         <td><%= declaration.description %></td>
 
-        <td><%= link_to 'Show', declaration %></td>
-        <td><%= link_to 'Edit', edit_declaration_path(declaration) %></td>
-        <td><%= link_to 'Destroy', declaration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <td><%= link_to 'Export', export_declaration_path(declaration), target: "_blank" %></td>
+        <td><%= link_to t('app.show'), declaration %></td>
+        <td><%= link_to t('app.edit'), edit_declaration_path(declaration) %></td>
+        <td><%= link_to t('app.destroy'), declaration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('app.export'), export_declaration_path(declaration), target: "_blank" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Declaration', new_declaration_path %>
+<%= link_to t('app.new_declaration'), new_declaration_path %>

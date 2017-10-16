@@ -1,5 +1,5 @@
-<h1>New Declaration</h1>
+<h1> <%= t('app.new_declaration') %></h1>
 
 <%= render 'form', declaration: @declaration %>
 
-<%= link_to 'Back', declarations_path %>
+<%= link_to t('app.back'), declarations_path %>
