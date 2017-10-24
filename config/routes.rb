@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 resources :declarations
+root "declarations#index"
 # /spendings_export
 get '/declaration_export' => 'declarations#export'
 resources :declarations do

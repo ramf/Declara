@@ -9574,3 +9574,2539 @@ Processing by DeclarationsController#new as HTML
 Completed 200 OK in 29ms (Views: 27.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-10-17 09:58:42 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tj.ce.gov.br/900826/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tj.ce.gov.br/900826/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (5.7ms)
+Completed 200 OK in 84ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 09:58:50 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2080.9ms)
+Completed 200 OK in 2618ms (Views: 2575.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 11:35:43 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (3.8ms)
+Completed 200 OK in 53ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 11:35:47 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (485.2ms)
+Completed 200 OK in 885ms (Views: 870.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/declarations/6/export" for 127.0.0.1 at 2017-10-17 11:35:54 -0300
+Processing by DeclarationsController#export as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT  "declarations".* FROM "declarations" WHERE "declarations"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/declaration.pdf
+Completed 302 Found in 1251ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations/new" for 127.0.0.1 at 2017-10-17 11:40:14 -0300
+Processing by DeclarationsController#new as HTML
+  Rendering declarations/new.html.erb within layouts/application
+  Rendered declarations/_form.html.erb (37.6ms)
+  Rendered declarations/new.html.erb within layouts/application (44.8ms)
+Completed 200 OK in 103ms (Views: 98.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 11:40:16 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:25:23 -0300
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:25:23 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DeclarationsController#index as HTML
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1875.8ms)
+  Rendered declarations/index.html.erb within layouts/application (1853.1ms)
+Completed 500 Internal Server Error in 2232ms (ActiveRecord: 1.1ms)
+
+
+Completed 500 Internal Server Error in 2224ms (ActiveRecord: 0.3ms)
+
+
+  
+  
+ActionView::Template::Error (couldn't find file 'twitter/bootstrap/responsive' with type 'text/css'
+Checked in these paths: 
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/config
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/images
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/javascripts
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/images
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/actionview-5.1.4/lib/assets/compiled
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/node_modules):
+ActionView::Template::Error (couldn't find file 'twitter/bootstrap/responsive' with type 'text/css'
+Checked in these paths: 
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/config
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/images
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/javascripts
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/images
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/actionview-5.1.4/lib/assets/compiled
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/node_modules):
+    4:     <title><%= t("app.appname") %></title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+    4:     <title><%= t("app.appname") %></title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+  
+app/assets/stylesheets/application.css:16
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3787214291491105114_37467480'
+app/assets/stylesheets/application.css:16
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3787214291491105114_37467480'
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:26:36 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (442.6ms)
+Completed 500 Internal Server Error in 551ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'twitter/bootstrap/responsive' with type 'text/css'
+Checked in these paths: 
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/config
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/images
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/javascripts
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/images
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/actionview-5.1.4/lib/assets/compiled
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/node_modules):
+    4:     <title><%= t("app.appname") %></title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:16
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__410827695658971198_37990620'
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:27:18 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (264.4ms)
+Completed 500 Internal Server Error in 268ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `agreement' for #<#<Class:0x000000048d1720>:0x007f4b38a39488>):
+    17:         <td><%= declaration.declaration_name %></td>
+    18:         <td><%= declaration.description %></td>
+    19: 
+    20:         <td><%= link_to t("app.show"), agreement, class: "btn btn-primary" %></td>
+    21:         <td><%= link_to t("app.edit"), edit_agreement_path(agreement), class: "btn btn-info" %></td>
+    22:         <td><%= link_to t("app.destroy"), agreement, method: :delete, data: { confirm: 'Você tem certeza?' }, class: "btn btn-danger" %></td>
+    23:         <td><%= link_to t("app.export"), export_agreement_path(agreement), target: "_blank", class: "btn btn-success" %></td>
+  
+app/views/declarations/index.html.erb:20:in `block in _app_views_declarations_index_html_erb___4007138217246687600_69980524762740'
+app/views/declarations/index.html.erb:15:in `_app_views_declarations_index_html_erb___4007138217246687600_69980524762740'
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:28:00 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'twitter/bootstrap/responsive' with type 'text/css'
+Checked in these paths: 
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/config
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/images
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/javascripts
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/images
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/actionview-5.1.4/lib/assets/compiled
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/node_modules):
+    4:     <title><%= t("app.appname") %></title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:16
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__410827695658971198_69980537073060'
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:28:17 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 3149ms (Views: 3147.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations/6/export" for 127.0.0.1 at 2017-10-17 14:28:30 -0300
+Processing by DeclarationsController#export as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT  "declarations".* FROM "declarations" WHERE "declarations"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/declaration.pdf
+Completed 302 Found in 1298ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:30:47 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 255ms (Views: 253.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:32:04 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 156ms (Views: 153.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:33:10 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 137ms (Views: 135.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:33:10 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 152ms (Views: 150.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:33:11 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations/6/edit" for 127.0.0.1 at 2017-10-17 14:34:17 -0300
+Processing by DeclarationsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeclaration Load (0.1ms)[0m  [1m[34mSELECT  "declarations".* FROM "declarations" WHERE "declarations"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering declarations/edit.html.erb within layouts/application
+  Rendered declarations/_form.html.erb (126.1ms)
+  Rendered declarations/edit.html.erb within layouts/application (127.8ms)
+Completed 200 OK in 281ms (Views: 279.0ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/declarations/6" for 127.0.0.1 at 2017-10-17 14:34:25 -0300
+Processing by DeclarationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RfZv2DMyRC32GlvWyCSMsD7+s/2h/uQbJc+AqVHK7yfoWRy2MdQQE0GK3wKcQJ1we674HgjD98TXJYZI7BYTnA==", "declaration"=>{"declaration_name"=>"LARA CUSTÓDIO", "description"=>"Declaração de Serviço de Distribuição de cartórios"}, "commit"=>"Atualizar declaração", "id"=>"6"}
+  [1m[36mDeclaration Load (0.1ms)[0m  [1m[34mSELECT  "declarations".* FROM "declarations" WHERE "declarations"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (35.4ms)[0m  [1m[33mUPDATE "declarations" SET "description" = ?, "updated_at" = ? WHERE "declarations"."id" = ?[0m  [["description", "Declaração de Serviço de Distribuição de cartórios"], ["updated_at", "2017-10-17 17:34:25.190533"], ["id", 6]]
+  [1m[35m (224.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/declarations/6
+Completed 302 Found in 265ms (ActiveRecord: 260.4ms)
+
+
+Started GET "/declarations/6" for 127.0.0.1 at 2017-10-17 14:34:25 -0300
+Processing by DeclarationsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT  "declarations".* FROM "declarations" WHERE "declarations"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering declarations/show.html.erb within layouts/application
+  Rendered declarations/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 148ms (Views: 145.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:34:27 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 138ms (Views: 136.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations/6/export" for 127.0.0.1 at 2017-10-17 14:34:38 -0300
+Processing by DeclarationsController#export as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeclaration Load (0.1ms)[0m  [1m[34mSELECT  "declarations".* FROM "declarations" WHERE "declarations"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/declaration.pdf
+Completed 302 Found in 1406ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:35:15 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 132ms (Views: 130.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:35:16 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 136ms (Views: 134.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:35:16 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 126ms (Views: 125.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:35:56 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:35:58 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 146ms (Views: 144.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:35:58 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 144ms (Views: 142.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:35:59 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 75ms (Views: 73.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:35:59 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 124ms (Views: 122.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:35:59 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 71ms (Views: 68.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:35:59 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:35:59 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:35:59 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:35:59 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:36:00 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.6ms)
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:36:00 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.1ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 139ms (Views: 137.8ms | ActiveRecord: 0.3ms)
+
+
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:36:00 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:36:00 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 51ms (Views: 48.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:36:15 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:36:33 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 161ms (Views: 159.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:41:21 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 282ms (Views: 277.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:41:24 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 138ms (Views: 136.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:41:40 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 175ms (Views: 173.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:41:50 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_menu.html.erb (0.7ms)
+Completed 500 Internal Server Error in 215ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/views/layouts/_menu.html.erb:16: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/layouts/_menu.html.erb:16: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__410827695658971198_69980529818200'
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:42:11 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 163ms (Views: 161.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:43:33 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 202ms (Views: 199.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:43:41 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 203ms (Views: 200.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:43:46 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 241ms (Views: 238.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:43:52 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 192ms (Views: 190.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:43:57 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 177ms (Views: 175.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:44:05 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 198ms (Views: 195.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:44:11 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 168ms (Views: 166.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:44:16 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 208ms (Views: 206.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:45:02 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 224ms (Views: 222.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:45:14 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.1ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 150ms (Views: 148.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:45:20 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 204ms (Views: 202.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:45:25 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 155ms (Views: 153.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:45:29 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 183ms (Views: 181.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:45:35 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 192ms (Views: 190.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:45:40 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 158ms (Views: 156.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:45:47 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 173ms (Views: 171.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:46:01 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 151ms (Views: 149.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations/6/export" for 127.0.0.1 at 2017-10-17 14:46:02 -0300
+Processing by DeclarationsController#export as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeclaration Load (0.1ms)[0m  [1m[34mSELECT  "declarations".* FROM "declarations" WHERE "declarations"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/declaration.pdf
+Completed 302 Found in 1195ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:47:16 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.1ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 135ms (Views: 133.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:48:03 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_menu.html.erb (114.6ms)
+Completed 500 Internal Server Error in 278ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x000000048d1720>:0x007f4b258d9128>):
+    1: <% if user_signed_in? %>
+    2:   <nav class="navbar navbar-default">
+    3:     <div class="container-fluid">
+    4:       <div class="navbar-header">
+  
+app/views/layouts/_menu.html.erb:1:in `_app_views_layouts__menu_html_erb__3020873583699169815_69980362383260'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__410827695658971198_69980364645840'
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:48:12 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (1.6ms)
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/views/layouts/_menu.html.erb:21: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/layouts/_menu.html.erb:21: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__410827695658971198_69980532727720'
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:48:17 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_menu.html.erb (205.5ms)
+Completed 500 Internal Server Error in 377ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `current_user' for #<#<Class:0x000000048d1720>:0x007f4b25a3eb58>
+Did you mean?  current_page?):
+     9: 
+    10:           </ul>
+    11:         <ul class="nav navbar-nav navbar-right">
+    12:              <li><a href=""><%= current_user.email %></a></li>
+    13:              <li><%= link_to ("Sair"), destroy_user_session_path, method: :delete %></li>
+    14: 
+    15:         </ul>
+  
+app/views/layouts/_menu.html.erb:12:in `_app_views_layouts__menu_html_erb__3020873583699169815_69980365445380'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__410827695658971198_69980365475560'
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:48:24 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_menu.html.erb (212.2ms)
+Completed 500 Internal Server Error in 375ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `destroy_user_session_path' for #<#<Class:0x000000048d1720>:0x007f4b25c861e0>):
+    10:           </ul>
+    11:         <ul class="nav navbar-nav navbar-right">
+    12:              
+    13:              <li><%= link_to ("Sair"), destroy_user_session_path, method: :delete %></li>
+    14: 
+    15:         </ul>
+    16:       </div>
+  
+app/views/layouts/_menu.html.erb:13:in `_app_views_layouts__menu_html_erb__3020873583699169815_69980364486220'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__410827695658971198_69980366564440'
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:48:29 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 115ms (Views: 113.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:49:58 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 156ms (Views: 153.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:50:00 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 148ms (Views: 146.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:50:23 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_menu.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 159ms (Views: 157.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:51:17 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 183ms (Views: 178.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:51:19 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 159ms (Views: 157.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:51:43 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 154ms (Views: 152.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:51:45 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 154ms (Views: 153.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:51:46 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 153ms (Views: 152.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:51:46 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.4ms)
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:51:46 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 179ms (Views: 178.1ms | ActiveRecord: 0.2ms)
+
+
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 76ms (Views: 73.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:52:27 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:52:28 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 167ms (Views: 164.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:52:29 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.7ms)
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:52:29 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 172ms (Views: 170.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:52:29 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 197ms (Views: 193.5ms | ActiveRecord: 0.2ms)
+
+
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 76ms (Views: 74.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 14:52:29 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 59ms (Views: 57.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:04:15 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.1ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1842.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1908ms (Views: 1898.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:04:50 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 164ms (Views: 162.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:04:51 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 150ms (Views: 148.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:04:52 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 163ms (Views: 161.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:04:52 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 159ms (Views: 157.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:04:52 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 69ms (Views: 67.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:04:52 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:06:55 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 61ms (Views: 59.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:06:56 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 160ms (Views: 158.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:08:00 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 160ms (Views: 158.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:08:00 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 151ms (Views: 148.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:08:01 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 101ms (Views: 99.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:08:01 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 134ms (Views: 132.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:08:01 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:08:01 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 59ms (Views: 57.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:08:02 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 94ms (Views: 92.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:09:21 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 119ms (Views: 117.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:09:42 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (3.8ms)
+Completed 200 OK in 30ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:10:14 -0300
+  
+ActionController::RoutingError (uninitialized constant IndexController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:10:30 -0300
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:11:01 -0300
+  
+ActionController::RoutingError (uninitialized constant IndexController):
+  
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.4) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.4) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:11:17 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.1ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 153ms (Views: 149.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:11:33 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 160ms (Views: 158.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:11:51 -0300
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/declarations" for 127.0.0.1 at 2017-10-17 15:12:29 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.1ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 87ms (Views: 82.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:12:33 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 78ms (Views: 76.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:12:43 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 138ms (Views: 136.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:14:57 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap_and_overrides' with type 'text/css'
+Checked in these paths: 
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/config
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/images
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/javascripts
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/images
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/actionview-5.1.4/lib/assets/compiled
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/node_modules):
+    4:     <title><%= t("app.appname")%></title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    8:     <%= javascript_include_tag 'application'%>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__410827695658971198_69980356319500'
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:15:32 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap_and_overrides' with type 'text/css'
+Checked in these paths: 
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/config
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/images
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/javascripts
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/images
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/actionview-5.1.4/lib/assets/compiled
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/node_modules):
+    4:     <title><%= t("app.appname")%></title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    8:     <%= javascript_include_tag 'application'%>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__410827695658971198_69980366299340'
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:17:09 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap_and_overrides' with type 'text/css'
+Checked in these paths: 
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/config
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/images
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/javascripts
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/images
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/actionview-5.1.4/lib/assets/compiled
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/node_modules):
+    4:     <title><%= t("app.appname")%></title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    8:     <%= javascript_include_tag 'application'%>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__410827695658971198_69980539308420'
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:17:55 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (549.7ms)
+Completed 500 Internal Server Error in 764ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap_and_overrides' with type 'text/css'
+Checked in these paths: 
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/config
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/images
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/javascripts
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/app/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/images
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/bootstrap-sass-rails-2.2.2.1/vendor/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/actionview-5.1.4/lib/assets/compiled
+  /home/tj.ce.gov.br/900828/.rvm/gems/ruby-2.4.1/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/tj.ce.gov.br/900828/Documentos/projetos/declaration/node_modules):
+    4:     <title><%= t("app.appname")%></title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    8:     <%= javascript_include_tag 'application'%>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__3577141480784867034_18997740'
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:18:30 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.1ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1182ms (Views: 1180.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/declarations/6/export" for 127.0.0.1 at 2017-10-17 15:18:43 -0300
+Processing by DeclarationsController#export as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT  "declarations".* FROM "declarations" WHERE "declarations"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/declaration.pdf
+Completed 302 Found in 1247ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:18:51 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 108ms (Views: 106.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:20:53 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 180ms (Views: 178.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:21:21 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 156ms (Views: 154.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:21:21 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 155ms (Views: 152.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:21:22 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 128ms (Views: 125.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:21:22 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 66.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:21:22 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 92ms (Views: 90.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:21:30 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 82ms (Views: 80.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:21:47 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 169ms (Views: 167.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 15:21:57 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 106ms (Views: 105.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-17 16:10:46 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1892.3ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 5346ms (Views: 5322.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 10:45:05 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1828.8ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 3569ms (Views: 3502.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 10:54:39 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (445.2ms)
+  Rendered layouts/_menu.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 720ms (Views: 710.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 10:54:49 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_menu with {:locale=>[:"pt-BR"], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :prawn, :coffee, :jbuilder]}. Searched in:
+  * "/home/tj.ce.gov.br/900826/declaration/app/views"
+  * "/home/tj.ce.gov.br/900826/.rvm/gems/ruby-2.4.1/gems/twitter-bootstrap-rails-4.0.0/app/views"
+):
+     9:   </head>
+    10: 
+    11:   <body>
+    12:     <%= render partial: "layouts/menu"%>
+    13:     <div class="container">
+    14:     <%= yield %>
+    15:     <%= render 'layouts/footer' %>
+  
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2067153958068591274_70122656024420'
+Started GET "/" for 127.0.0.1 at 2017-10-18 10:55:12 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 10:56:01 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 62ms (Views: 55.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:10:29 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  Rendered declarations/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 88ms (Views: 87.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:10:53 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  Rendered declarations/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:10:54 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  Rendered declarations/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 80ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:10:54 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  Rendered declarations/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:10:54 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  Rendered declarations/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 69ms (Views: 67.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:11:01 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  Rendered declarations/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:13:11 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  Rendered declarations/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:13:12 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  Rendered declarations/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 71ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:13:18 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  Rendered declarations/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:13:19 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  Rendered declarations/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 68ms (Views: 66.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:13:27 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  Rendered declarations/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 740ms (Views: 730.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:15:05 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 75ms (Views: 71.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:15:36 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:17:03 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  Rendered declarations/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 57ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:17:28 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 54ms (Views: 52.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:18:38 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 56ms (Views: 54.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations/6/export" for 127.0.0.1 at 2017-10-18 11:18:39 -0300
+Processing by DeclarationsController#export as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT  "declarations".* FROM "declarations" WHERE "declarations"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/declaration.pdf
+Completed 302 Found in 1262ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:19:44 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 45ms (Views: 43.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:19:49 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 266ms (Views: 263.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:20:38 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 153ms (Views: 150.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:20:45 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 74ms (Views: 72.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:22:21 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 90ms (Views: 82.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:24:58 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 91ms (Views: 89.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:25:25 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 125ms (Views: 123.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:25:26 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 59ms (Views: 57.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:31:11 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 94ms (Views: 91.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:32:32 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:33:10 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 98.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:33:24 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 105ms (Views: 102.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:33:40 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 103ms (Views: 101.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:34:25 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 83ms (Views: 81.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:34:48 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 93ms (Views: 91.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:34:54 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 87ms (Views: 85.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:35:02 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 93ms (Views: 92.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:35:14 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 112ms (Views: 110.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:35:33 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:35:41 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 99ms (Views: 97.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:35:44 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 73ms (Views: 71.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:35:44 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 77ms (Views: 75.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:35:44 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 59ms (Views: 57.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:35:53 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 92ms (Views: 89.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:35:55 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 56ms (Views: 54.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:35:55 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 83ms (Views: 81.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:35:55 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:36:01 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 99ms (Views: 96.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:36:07 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 113ms (Views: 111.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:36:13 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 101ms (Views: 99.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:36:40 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 84ms (Views: 81.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:36:52 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:37:28 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 92ms (Views: 90.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:37:29 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 81ms (Views: 78.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:37:36 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 82ms (Views: 80.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:37:37 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 74ms (Views: 72.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:37:53 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 92ms (Views: 90.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:38:01 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 68ms (Views: 66.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:39:14 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 100ms (Views: 98.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:39:26 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 99ms (Views: 97.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:39:27 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 79ms (Views: 76.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:39:34 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 103ms (Views: 101.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:39:53 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 88ms (Views: 86.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:40:26 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 65ms (Views: 63.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:41:24 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 90ms (Views: 88.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:42:11 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 59.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:42:19 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:44:24 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:45:11 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 71ms (Views: 69.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:45:26 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 93ms (Views: 91.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:45:39 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 98ms (Views: 95.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:45:46 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 125ms (Views: 123.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:46:37 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 56ms (Views: 53.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:46:44 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:46:54 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 71ms (Views: 69.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:47:47 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:48:11 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 94ms (Views: 91.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:48:27 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 93ms (Views: 91.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:49:30 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 63ms (Views: 60.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:49:50 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 98ms (Views: 96.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:50:47 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...ckground-repeat": expected ";", was ": no-repeat;"):
+    4:     <title><%= t("app.appname")%></title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    8:     <%= javascript_include_tag 'application'%>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/declarations.scss:7
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2440020977346582614_69990754136080'
+Started GET "/" for 127.0.0.1 at 2017-10-18 11:50:58 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 103ms (Views: 101.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 11:31:45 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (3070.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 3289ms (Views: 3268.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 11:36:11 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (3.5ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+Started GET "/" for 127.0.0.1 at 2017-10-24 11:36:18 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.1ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (5733.6ms)
+  Rendered declarations/index.html.erb within layouts/application (2107.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 2359ms (Views: 2357.3ms | ActiveRecord: 0.3ms)
+
+
+Completed 200 OK in 6243ms (Views: 6150.5ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 11:36:26 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 11:36:47 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 157ms (Views: 156.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations/6/export" for 127.0.0.1 at 2017-10-24 11:36:48 -0300
+Processing by DeclarationsController#export as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT  "declarations".* FROM "declarations" WHERE "declarations"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/declaration.pdf
+Completed 302 Found in 1261ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations/6/export" for 127.0.0.1 at 2017-10-24 11:36:49 -0300
+Processing by DeclarationsController#export as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT  "declarations".* FROM "declarations" WHERE "declarations"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/declaration.pdf
+Completed 302 Found in 1590ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 11:37:06 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 220ms (Views: 218.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations/6/edit" for 127.0.0.1 at 2017-10-24 11:37:08 -0300
+Processing by DeclarationsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeclaration Load (0.1ms)[0m  [1m[34mSELECT  "declarations".* FROM "declarations" WHERE "declarations"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering declarations/edit.html.erb within layouts/application
+  Rendered declarations/_form.html.erb (78.5ms)
+  Rendered declarations/edit.html.erb within layouts/application (80.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 249ms (Views: 236.8ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/declarations/6" for 127.0.0.1 at 2017-10-24 11:37:13 -0300
+Processing by DeclarationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6bj5n+tijdd3M6AN0io27gJ/rYEbpDi6cfzyB67QESqRbtIfZSs0QCDZu7yZwmauyi+AEwTkpCqp1e7u58t6Xg==", "declaration"=>{"declaration_name"=>"LARA CUSTÓDIO", "description"=>"Declaração de Serviço de Distribuição de Cartórios"}, "commit"=>"Atualizar declaração", "id"=>"6"}
+  [1m[36mDeclaration Load (0.1ms)[0m  [1m[34mSELECT  "declarations".* FROM "declarations" WHERE "declarations"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (53.6ms)[0m  [1m[33mUPDATE "declarations" SET "description" = ?, "updated_at" = ? WHERE "declarations"."id" = ?[0m  [["description", "Declaração de Serviço de Distribuição de Cartórios"], ["updated_at", "2017-10-24 14:37:13.790266"], ["id", 6]]
+  [1m[35m (262.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/declarations/6
+Completed 302 Found in 352ms (ActiveRecord: 315.9ms)
+
+
+Started GET "/declarations/6" for 127.0.0.1 at 2017-10-24 11:37:14 -0300
+Processing by DeclarationsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeclaration Load (0.1ms)[0m  [1m[34mSELECT  "declarations".* FROM "declarations" WHERE "declarations"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering declarations/show.html.erb within layouts/application
+  Rendered declarations/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 172ms (Views: 157.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 11:37:26 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 162ms (Views: 160.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations/6/export" for 127.0.0.1 at 2017-10-24 11:37:28 -0300
+Processing by DeclarationsController#export as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeclaration Load (0.1ms)[0m  [1m[34mSELECT  "declarations".* FROM "declarations" WHERE "declarations"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/declaration.pdf
+Completed 302 Found in 1274ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-10-24 11:39:14 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-24 11:39:21 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 177ms (Views: 175.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 13:50:07 -0300
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (49.3ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (163.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 1072ms (Views: 886.9ms | ActiveRecord: 49.3ms)
+
+
+Started GET "/declarations/6/export" for 127.0.0.1 at 2017-10-24 13:50:41 -0300
+Processing by DeclarationsController#export as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT  "declarations".* FROM "declarations" WHERE "declarations"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/declaration.pdf
+Completed 302 Found in 1655ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/declarations/6/export" for 127.0.0.1 at 2017-10-24 13:58:10 -0300
+Processing by DeclarationsController#export as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mDeclaration Load (0.1ms)[0m  [1m[34mSELECT  "declarations".* FROM "declarations" WHERE "declarations"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Redirected to http://localhost:3000/declaration.pdf
+Completed 302 Found in 1150ms (ActiveRecord: 0.1ms)
+
+

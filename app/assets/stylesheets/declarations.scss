@@ -1,3 +1,18 @@
-// Place all the styles related to the declarations controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* body declaration */
+
+body {
+
+ 	background: linear-gradient(#9dcbc1,#e6f2f0 40%, #FFFFFF);
+ 	background-repeat: no-repeat;
+
+ }
+
+#logo{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    right: 45%;
+    bottom: 45%;
+    opacity: 50%;
+    opacity: 0.2;
+}

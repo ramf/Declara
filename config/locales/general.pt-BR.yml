@@ -4,7 +4,7 @@ pt-BR:
     show: "Visualizar"
     edit: "Editar"
     destroy: "Apagar"
-    export: "Gerar PDF"
+    export: "Gerar Declaração"
     new_declaration: "Nova Declaração"
     back: "Voltar"
     declaration_name: "Nome da Declaração"

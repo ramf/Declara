@@ -1,31 +1,31 @@
-<p id="notice"><%= notice %></p>
+<div class="page">
 
-<h1>Declarações</h1>
+    <center><h1>Declaração</h1></center>
+    <br>
 
-<table>
-  <thead>
-    <tr>
-      <th>Nome da declaração</th>
-      <th>Descrição declaração</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <table class="table table-striped">
+
+    <thead>
+      <tr>
+        <th>Nome da declaração</th>
+        <th>Descrição declaração</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
 
   <tbody>
     <% @declarations.each do |declaration| %>
       <tr>
         <td><%= declaration.declaration_name %></td>
         <td><%= declaration.description %></td>
-
-        <td><%= link_to t('app.show'), declaration %></td>
-        <td><%= link_to t('app.edit'), edit_declaration_path(declaration) %></td>
-        <td><%= link_to t('app.destroy'), declaration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <td><%= link_to t('app.export'), export_declaration_path(declaration), target: "_blank" %></td>
+        <td><%= link_to t('app.export'), export_declaration_path(declaration), target: "_blank", class: "btn btn-info" %></td>
       </tr>
     <% end %>
   </tbody>
-</table>
+  </table>
 
-<br>
+  <span>
 
-<%= link_to t('app.new_declaration'), new_declaration_path %>
+    <img alt="image" id="logo" src="<%= image_url 'logotj.png'  %>"/>
+  </span>
+  <br>
