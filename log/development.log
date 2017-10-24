@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (140.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
   [1m[35m (79.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
@@ -12110,3 +12111,5 @@ Redirected to http://localhost:3000/declaration.pdf
 Completed 302 Found in 1150ms (ActiveRecord: 0.1ms)
 
 
+=======
+>>>>>>> 741ddefe9265791cc82efc110878514c729b7143
