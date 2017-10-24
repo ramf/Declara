@@ -12113,3 +12113,13 @@ Completed 302 Found in 1150ms (ActiveRecord: 0.1ms)
 
 =======
 >>>>>>> 741ddefe9265791cc82efc110878514c729b7143
+Started GET "/" for 127.0.0.1 at 2017-10-24 14:32:46 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DeclarationsController#index as HTML
+  Rendering declarations/index.html.erb within layouts/application
+  [1m[36mDeclaration Load (0.2ms)[0m  [1m[34mSELECT "declarations".* FROM "declarations"[0m
+  Rendered declarations/index.html.erb within layouts/application (1982.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 3751ms (Views: 3714.8ms | ActiveRecord: 0.6ms)
+
+
